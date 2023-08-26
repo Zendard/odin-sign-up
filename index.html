@@ -9,24 +9,24 @@
 </head>
 
 <body>
-	<div>
-		<div><img src="" alt="">
+	<div id="left-panel">
+		<div id="title-back"><img src="" alt="">
 			<h1>Toby</h1>
 		</div>
 	</div>
-	<div>
+	<div id="right-panel">
 		<h3>This is not a real online service! You know you need something like this in your life to help you realize
 			your deepest dreams. Sign up <i>now</i> to get started</i></h3>
 		<h3>You <i>know</i> you want to.</h3>
-		<form action="POST">
-			<h3>Let's do this!</h3>
+		<form action="#">
+			<h3 id="form-title">Let's do this!</h3>
 			<div id="form-input">
-				<div id="column">
+				<div class="column">
 					<label for="first-name">First Name*</label><input type="text" name="first-name" required>
 					<label for="email">Email*</label><input type="email" name="email" required>
 					<label for="password">Password*</label><input type="password" name="password" required>
 				</div>
-				<div id="column">
+				<div class="column">
 					<label for="last-name">Last Name*</label>
 					<input type="text" name="last-name" required>
 					<label for="phone-number">Phone Number*</label>
@@ -34,8 +34,8 @@
 					<label for="password-repeat">Confirm Password*</label>
 					<input type="password" name="password-repeat" required>
 				</div>
-				<button type="submit">Create Account</button>
 			</div>
+			<button type="submit">Create Account</button>
 		</form>
 		<p>Already have an account? <a href="about:blank">Log in</a></p>
 	</div>

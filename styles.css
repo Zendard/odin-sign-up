@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Source+Code+Pro:wght@400;600&display=swap');
+
+:root {
+	--text: #eef1f2;
+	--background: #121717;
+	--primary: #016565;
+	--secondary: #103333;
+	--accent: #3ecccc;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	font-weight: 600;
+	color: var(--text);
+	margin: 0px;
+	display: flex;
+	height: 100vh;
+}
+
+#left-panel {
+	width: 40vw;
+	flex-grow: 1;
+	margin: 0px;
+	background-image: url(./img/background.jpg);
+	background-size: cover;
+	background-position: -10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#title-back {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, .7);
+	width: 100%;
+}
+
+h1 {
+	font-family: 'Rubik Mono One', sans-serif;
+	font-size: 6rem;
+}
+
+#right-panel {
+	background-color: var(--background);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+h3 {
+	margin: 1rem 3rem;
+	font-size: 1.5rem;
+	width: 70%;
+}
+
+p {
+	margin: 3rem 3rem;
+}
+
+button {
+	border: none;
+	border-radius: 1rem;
+	padding: 1.3rem 2rem;
+	background-color: var(--primary);
+	color: var(--text);
+	font-family: 'Rubik Mono One', sans-serif;
+	font-size: 1.3rem;
+	margin: 3rem 3rem;
+	transition: scale .4s;
+}
+
+button:hover {
+	scale: 1.08;
+}
+
+a {
+	text-decoration: none;
+	color: var(--accent);
+}
+
+a:hover {
+	color: var(--primary);
+}
+
+form {
+	position: relative;
+	top: 1vh;
+	margin: 2rem 0px;
+}
+
+#form-title {
+	background-color: var(--secondary);
+	width: 100%;
+	padding: 1rem 3rem;
+	margin: 0px
+}
+
+#form-input {
+	display: flex;
+	background-color: var(--secondary);
+	width: 100%;
+	padding: 1rem 3rem;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	margin-right: 4rem;
+	width: 20rem;
+}
+
+input {
+	border-radius: .8rem;
+	font-size: 1rem;
+	padding: .4rem 1rem;
+	border: none;
+}
+
+input:focus {
+	border: solid 0.1rem var(--primary);
+}
+
+input:invalid {
+	border: solid red 0.3rem;
+}
+
+label {
+	margin-top: 1rem;
+}
